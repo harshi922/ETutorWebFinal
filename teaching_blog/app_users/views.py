@@ -21,9 +21,9 @@ def user_login(request):
                 login(request,user)
                 return HttpResponseRedirect(reverse('index'))
             else:
-                return HttpResponse("ACCOUNT IS DEACTIVATED")
+                return HttpResponse("<div style='background-color: wheat; height: 62%;'><h1 style='padding:12%'>ACCOUNT IS DEACTIVATED</h1></div>")
         else:
-            return HttpResponse("Please use correct id and password")
+            return HttpResponse("<div style='background-color: wheat; height: 62%;'><h1 style='padding:12%'>Please use correct id and password</h1></div>")
             # return HttpResponseRedirect(reverse('register'))
 
     else:
@@ -50,7 +50,6 @@ def register(request):
 
         if user_form.is_valid() and profile_form.is_valid():
             user = user_form.save()
-            # user.set_password(user.password)
             user.save()
 
             profile = profile_form.save(commit=False)

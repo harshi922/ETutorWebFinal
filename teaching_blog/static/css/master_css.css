@@ -1,80 +1,85 @@
 html,
-body,
-header,
+body
+{
+    height: 100%;
+    background-color: #DAA642;
+    font-family: Poppins;
+}
+
+header{
+  height: 80%;
+}
+
 #intro {
+    background:linear-gradient(rgba(206, 197, 79, 0.452), rgba(212, 202, 61, 0.452)), url("../Images/businessman-with-light-bulb-his-hand 1.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
 }
 
-#intro {
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://besthqwallpapers.com/Uploads/16-5-2020/132669/stack-of-books-blue-background-education-concepts-books-library.jpg")no-repeat center center fixed;
+#curriculum {
+  background:linear-gradient(rgba(206, 197, 79, 0.452), rgba(212, 202, 61, 0.452)), url("../Images/group-kids-friends-arm-around-sitting-together\ 1.png")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 2%;
+}
+
+#login{
+  
+      background:linear-gradient(rgba(206, 197, 79, 0.452), rgba(212, 202, 61, 0.452)), url("../Images/book-with-green-board-background\ 1.jpg")no-repeat center center fixed;
+      
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-
-.bg-light{
-  background-color:transparent !important;
-  transition:0.5s ease;
-  }
-
-.bg-light.scrolled{
-  background-color: #b2ebf2 !important;
+.btn-dark:focus, .btn-dark:active:focus, .btn:focus {
+ 
+  box-shadow: none;
 }
 
 
-.navbar-light .navbar-nav .nav-link {
-    color: #ff5722;
+.navbar-dark .navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  
 }
 
-.navbar-light .nav-link {
-    color: #ff5722;
+.navbar-brand{
+  font-weight: 700;
 }
-
-
-.navbar-expand-lg {
-    background-color: #b2ebf2;
-  }
-  @media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-      background-color: #b2ebf2;
-    }
-  }
-  @media (min-width: 800px) and (max-width: 850px) {
-    .navbar:not(.top-nav-collapse) {
-      background-color: #b2ebf2;
-    }
-  }
 
 .text-white{
   color: white;
+
+}
+.text-black{
+  color: black;
+}
+.heading-text{
+  font-weight: 600;
+  padding: 5%;
+  font-size: 2rem;
 }
 
-hr{
-  border-color: inherit;
+.subheading-text{
+  font-weight: 600;
+  padding: 2.5%;
 }
 
-.btn-outline-white{
-  border-color: cyan;
+.logo-text{
+  font-weight: 800;
+
 }
 
-.event-mask{
-  position:relative;
-  left:auto;
-  bottom:auto;
-  text-align: center;
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  transform: translate(0, -100%);
-}
-
-#event-section {
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ak.picdn.net/shutterstock/videos/1012738781/thumb/1.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 .full-width{
   width: 100vw;
@@ -86,25 +91,19 @@ hr{
 }
 
 #page-intro {
-    height: 100%;
+  background-color: wheat;
+  border-radius: 10% 0 10% 0;
+  height: 70%;
+
 }
 
-#page-intro {
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.communitiesinschools.org/media/filer_public/ff/13/ff135f2a-6c3b-4f2a-9db6-38635fe64dde/empty-desk.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-/* breadcrumb class */
-/* Style the list */
+
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: transparent;
 }
 
-/* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
   font-size: 18px;
@@ -113,19 +112,20 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: #ff5722;
+  color: #F6BE51;
   content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 ul.breadcrumb li a {
-  color: white;
+  color: black;
   text-decoration: none;
+  font-weight: 700;
 }
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: #b2ebf2;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
@@ -133,11 +133,10 @@ ul.breadcrumb li a:hover {
   color: gray;
 }
 
-/* bradcrumb class over */
 
 
 
-.card-std{
+/* .card-std{
     border-radius: 4px;
     background: #fff;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
@@ -149,55 +148,48 @@ ul.breadcrumb li a:hover {
 .card-std:hover{
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(200,0,0,.12), 0 4px 8px rgba(200,0,0,.06);
+} */
+
+.subject-card{
+opacity: 0.3;
+border-radius: 2%;
 }
 
-.box-shadow-hover:hover{
-  box-shadow: 0 2px 40px 0 rgba(100, 0, 0, 0.16), 0 2px 10px 0 rgba(100, 0, 0, 0.12);
+.row {
+  --bs-gutter-x: 0;
 }
-
-/* get lesson button */
-.button-les {
-  border-radius: 4px;
-  background-color: #00bcd4;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 20px;
-  padding: 5px;
-  width: 180px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button-les span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button-les span:after {
-  content: '\00bb';
+.card-img-overlay {
   position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+  top: 59%;
+  right: 6%;
+  bottom: 7%;
+  left: 7%;
+  padding: 1rem;
+  box-shadow: black;
+  background: rgba(251, 251, 251, 0.2);
+  backdrop-filter: blur(36px);
+  border-radius: 24px;
+}
+.teacher-text{
+  position: absolute;
+    padding: 6%;
+    color: black;
+}
+.nav-tabs{
+  border: none;
 }
 
-.button-les:hover span {
-  padding-right: 25px;
+.tab-content>.active {
+  display: block;
+  background-color: wheat;
 }
 
-.button-les:hover span:after {
-  opacity: 1;
-  right: 0;
+.login-form{
+  background: #F7BE51;
+border-radius: 64px;
+width: auto;
 }
 
-/* get lesson button */
-
-/* responsive video */
 #player-overlay {
   position: relative;
   top: 0;
@@ -212,15 +204,4 @@ video {
   display: block;
   width: 100%;
   height: 100%;
-}
-/* responsive video */
-#class-time-table{
-  margin-left:auto !important;
-  margin-right:auto !important;
-}
-#class-time-table, #class-time-table th, #class-time-table td{
-  border:1px solid black;
-}
-#class-time-table td{
-  padding: 5px 10px;
 }

@@ -37,7 +37,6 @@ class LessonDetailView(DetailView, FormView):
             context['form'] = self.form_class(request=self.request)
         if 'form2' not in context:
             context['form2'] = self.second_form_class(request=self.request)
-        # context['comments'] = Comment.objects.filter(id=self.object.id)
         return context
 
     def post(self, request, *args, **kwargs):
@@ -50,10 +49,7 @@ class LessonDetailView(DetailView, FormView):
             form_name = 'form2'
 
         form = self.get_form(form_class)
-        # print("the form name is : ", form)
-        # print("form name: ", form_name)
-        # print("form_class:",form_class)
-
+      
         if form_name=='form' and form.is_valid():
             print("comment form is returned")
             return self.form_valid(form)
@@ -88,7 +84,6 @@ class LessonDetailView(DetailView, FormView):
 
 
 class LessonCreateView(CreateView):
-    # fields = ('lesson_id','name','position','image','video','ppt','Notes')
     form_class = LessonForm
     context_object_name = 'subject'
     model= Subject
